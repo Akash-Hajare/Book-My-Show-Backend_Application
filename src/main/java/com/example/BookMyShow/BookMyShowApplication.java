@@ -1,0 +1,20 @@
+package com.example.BookMyShow;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BookMyShowApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BookMyShowApplication.class, args);
+	}
+
+}
+
+/*
+For swagger ui
+
+  http://localhost:8080/swagger-ui/index.html#/
+
+ */
