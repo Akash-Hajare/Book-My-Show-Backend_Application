@@ -41,16 +41,17 @@ This Movie Booking application can do the following tasks :
    * Users can cancel the ticket before the showdate.
    * Get details of a ticket using ticketId
 
+# Teck-Stack Used : 
+ - Spring-Boot
+ - MySQL (Database)
+ - JPA and Hibernate for ORM mapping
+ - Postman for APIs testing
+ - Maven as a build tool
 
 ## API's
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Apis-1.png)
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Apis-2.png)
 
-## Assumptions
-### For the simplicity of system, I have made following assumptions while implementing the solution -
-- Single User Model - One user will use at once. No locking implemented for seat selection.
-- Single Screen Theaters - No multiple screen handling for a theater has been done. However an option is given for future scope.
-- No Payment flow used.
 
 ## Setup the Application
 - Create a database bookmyshow using the sql file bookmyshow.sql provided in src/main/resources.
