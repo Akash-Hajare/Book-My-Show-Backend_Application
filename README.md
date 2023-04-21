@@ -7,10 +7,10 @@
 # Design of the Application
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Design-1.png)
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Design-2.png)
-## Database Schema (ER Diagram)
+# Database Schema (ER Diagram)
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Schema.jpg)
 
-## Description
+# Description
 This Movie Booking application can do the following tasks :
 * USER
   * Users can register themselves on the application.
