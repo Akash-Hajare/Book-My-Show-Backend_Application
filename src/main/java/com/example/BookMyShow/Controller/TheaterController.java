@@ -29,7 +29,7 @@ public class TheaterController {
         //Copy-paste the following in postman
         {
             "name":"PVR",
-            "location":"Civil Lines, Allahabad",
+            "location":"Civil Lines, Nagpur",
             "classicSeatsCount" : 7,
             "premiumSeatsCount" : 7
         }

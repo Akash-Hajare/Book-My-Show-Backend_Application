@@ -59,8 +59,8 @@ public class UserController {
         }
     }
 
-    @PutMapping("/update-address/{userId}") //http://localhost:8080/users/update-address/<userId>
-    public ResponseEntity<String> updateUserAddress(@PathVariable int userId, @RequestBody String address){
+    @PutMapping("/update-address") //http://localhost:8080/users/update-address?id=1&address="Nagpur,Maharashtra"
+    public ResponseEntity<String> updateUserAddress(@RequestParam("id") int userId, @RequestParam("address") String address){
         try{
             String response = userService.updateUserAddress(userId,address);
             return new ResponseEntity<>(response,HttpStatus.ACCEPTED);
