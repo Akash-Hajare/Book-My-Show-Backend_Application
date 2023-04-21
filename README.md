@@ -1,10 +1,8 @@
 # Book-My-Show-Backend_Application
-
-## Implementation
-- Application is developed in Spring Boot with Java on Spring Tool Suite IDE. Database used is MySQL.
-- You can book movie tickets using the application.
-- Mandatory entities to book a ticket are - user, movie, theater with seats, shows of configured movies in configured theater with seats.
-- Exception Handling is done.
+- Book My Show is a movie ticket booking system project
+- Its a backend code written using Spring-Boot
+- It consists of Different Layers like Controller, Service, Repository , DTO(Data Transfer Object)
+- These layers in the project increases its code maintanablity, understadability and readablity
 
 ## SCHEMA
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Schema.jpg)
