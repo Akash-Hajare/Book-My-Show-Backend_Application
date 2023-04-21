@@ -4,6 +4,9 @@
 - It consists of Different Layers like Controller, Service, Repository , DTO(Data Transfer Object)
 - These layers in the project increases its code maintanablity, understadability and readablity
 
+# Design of the Application
+![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Design-1.png)
+![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Design-2.png)
 ## SCHEMA
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Schema.jpg)
 
