@@ -50,8 +50,12 @@ This Movie Booking application can do the following tasks :
    * Get details of a ticket using ticketId
 
 
+# Booking Confirmation Email
+![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/bms-email-1.png)
 
-## API's
+# Cancel Ticket's Confirmation Email
+![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/bms-email-2.png)
+# API's
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Apis-1.png)
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Apis-2.png)
 
