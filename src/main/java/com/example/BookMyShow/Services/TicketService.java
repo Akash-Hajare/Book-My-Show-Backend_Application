@@ -13,6 +13,8 @@ import com.example.BookMyShow.Repository.UserRepository;
 import com.example.BookMyShow.ResponseDto.TicketDetailsResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.util.Pair;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
@@ -37,6 +39,9 @@ public class TicketService {
 
     @PersistenceContext
     EntityManager entityManager;
+
+    @Autowired
+    JavaMailSender emailSender;
 
     public String bookTicket(TicketEntryDto ticketEntryDto) throws Exception {
         int showId = ticketEntryDto.getShowId();
@@ -74,7 +79,29 @@ public class TicketService {
         userRepository.save(userEntity);
         showEntity.getTicketEntityList().add(updatedTicketEntity);
         showRepository.save(showEntity);
-        return "Tickets Booked : " + bookedSeats;
+
+        //Email
+        String response="Hi "+userEntity.getName()+
+                "\n"+
+                "\n This email is to confirm your tickets bookings "+
+                "\n Please refer below details so you don't miss the show "+
+                "\n"+
+                "\n Movie Name : "+showEntity.getMovieEntity().getMovieName()+
+                "\n Theater Name : "+showEntity.getTheaterEntity().getName()+
+                "\n Booked Seats : "+bookedSeats+
+                "\n Ticket id : "+ticketEntity.getTicketId()+
+                "\n Show Date : "+showEntity.getShowDate()+
+                "\n Show Time :"+ showEntity.getShowTime();
+
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("backendspringrocks@gmail.com");
+        message.setTo("akashhajared11@gmail.com");
+        message.setSubject("Booking Confirmation Email");
+        message.setText(response);
+        emailSender.send(message);
+
+       return response;
+        //return "Tickets Booked : " + bookedSeats;
     }
 
     private Pair<String,Integer> bookTheSeats(List<String> requestedSeats,
@@ -127,7 +154,25 @@ public class TicketService {
 
         showRepository.save(showEntity);
 
-        return "Ticket is cancelled";
+        //email
+        String response="Hi "+ticketEntity.getUserEntity().getName()+
+        "\n"+
+        "\nThis is to conform your booking cancellation "+
+        "\nTicket id : "+ticketEntity.getTicketId()+
+        "\nCancellation Seats : "+ticketEntity.getTicketId()+
+        "\nTotal Refundable amount : "+ticketEntity.getTotalAmount()+
+        "\n Note : Amount will be refunded in your bank account within 7 workings days";
+
+
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("backendspringrocks@gmail.com");
+        message.setTo("akashhajared11@gmail.com");
+        message.setSubject("Cancel Ticket's Confirmation Email");
+        message.setText(response);
+        emailSender.send(message);
+
+        return "Ticket is cancelled details given below"+
+                "\n"+response;
 
     }
 
