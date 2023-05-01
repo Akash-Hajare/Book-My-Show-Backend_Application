@@ -4,11 +4,19 @@
 - It consists of Different Layers like Controller, Service, Repository , DTO(Data Transfer Object)
 - These layers in the project increases its code maintanablity, understadability and readablity
 
+# Database Schema (ER Diagram)
+![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Schema.jpg)
+
 # Design of the Application
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Design-1.png)
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Design-2.png)
-# Database Schema (ER Diagram)
-![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Schema.jpg)
+
+# Teck-Stack Used : 
+ - Spring-Boot
+ - MySQL (Database)
+ - JPA and Hibernate for ORM mapping
+ - Postman for APIs testing
+ - Maven as a build tool
 
 # Description
 This Movie Booking application can do the following tasks :
@@ -41,12 +49,7 @@ This Movie Booking application can do the following tasks :
    * Users can cancel the ticket before the showdate.
    * Get details of a ticket using ticketId
 
-# Teck-Stack Used : 
- - Spring-Boot
- - MySQL (Database)
- - JPA and Hibernate for ORM mapping
- - Postman for APIs testing
- - Maven as a build tool
+
 
 ## API's
 ![login](https://github.com/Akash-Hajare/Book-My-Show-Backend_Application/blob/master/Screenshots/Apis-1.png)
