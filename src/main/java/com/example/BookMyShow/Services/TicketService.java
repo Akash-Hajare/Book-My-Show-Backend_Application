@@ -94,7 +94,7 @@ public class TicketService {
                 "\n Show Time :"+ showEntity.getShowTime();
 
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("backendspringrocks@gmail.com");
+        message.setFrom("springbootbackend88@gmail.com");
         message.setTo("akashhajared11@gmail.com");
         message.setSubject("Booking Confirmation Email");
         message.setText(response);
@@ -159,13 +159,13 @@ public class TicketService {
         "\n"+
         "\nThis is to conform your booking cancellation "+
         "\nTicket id : "+ticketEntity.getTicketId()+
-        "\nCancellation Seats : "+ticketEntity.getTicketId()+
+        "\nCancellation Seats : "+bookedSeats+
         "\nTotal Refundable amount : "+ticketEntity.getTotalAmount()+
         "\n Note : Amount will be refunded in your bank account within 7 workings days";
 
 
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("backendspringrocks@gmail.com");
+        message.setFrom("springbootbackend88@gmail.com");
         message.setTo("akashhajared11@gmail.com");
         message.setSubject("Cancel Ticket's Confirmation Email");
         message.setText(response);
